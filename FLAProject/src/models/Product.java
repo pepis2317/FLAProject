@@ -1,27 +1,23 @@
 package models;
 
-import com.google.gson.annotations.Expose;
-
 public class Product {
-	@Expose
+
 	private int id;
 
-	@Expose
 	private String title;
 
-	@Expose
+
 	private double price;
 
-	@Expose
+
 	private String description;
 
-	@Expose
+
 	private String category;
 
-	@Expose
+
 	private String image;
 
-	@Expose
 	private Rating rating;
 
 	public Product() {

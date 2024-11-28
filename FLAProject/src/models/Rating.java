@@ -3,9 +3,9 @@ package models;
 import com.google.gson.annotations.Expose;
 
 public class Rating {
-	@Expose
+
 	private double rate;
-	@Expose
+
 	private int count;
 	public Rating() {}
 	public Rating(double rate, int count) {

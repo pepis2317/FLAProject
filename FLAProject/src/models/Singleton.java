@@ -41,7 +41,6 @@ public class Singleton{
 
                 GsonBuilder builder = new GsonBuilder();
                 builder.registerTypeAdapter(Product.class, new ProductAdapter());
-                builder.excludeFieldsWithoutExposeAnnotation();
                 Gson gson = builder.create();
                 Type productListType = new TypeToken<List<Product>>() {}.getType();
                 List<Product> products = gson.fromJson(response.toString(), productListType);
