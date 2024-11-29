@@ -102,20 +102,10 @@ public class Main {
 		}
 		paymentContext.setPaymentStrategy(paymentStrategy);
 		paymentContext.pay(amount);
-		
-		//have like a queue for what decorations should be applied first to keep the order ok
+	
 	}
 
 	public Main() {
-		// TODO Auto-generated constructor stub
-
-//		  PaymentContext paymentContext = new PaymentContext();
-//        PaymentStrategy bankTransferPayment = new BankTransferPayment("987654321");
-//        PaymentStrategy discountedPayment = new DiscountDecorator(bankTransferPayment, 10.0);
-//        PaymentStrategy wrappedPayment = new GiftwrapDecorator(discountedPayment, "RED");
-//        PaymentStrategy fastShippingPayment = new FastShippingDecorator(wrappedPayment, yap yap yap);
-//        paymentContext.setPaymentStrategy(fastShippingPayment);
-//        paymentContext.pay(500.0);
 		ProductsFactory factory = new ProductsFactory();
 		List<Product> products = factory.createProducts();
 		List<Product> cart = new ArrayList<>();
