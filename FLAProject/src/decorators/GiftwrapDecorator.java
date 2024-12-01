@@ -16,4 +16,5 @@ public class GiftwrapDecorator implements PaymentStrategy {
         System.out.println("Product wrapped in " + color + " wrapping. New amount is "+newAmount);
         paymentStrategy.pay(newAmount);
     }
+
 }
